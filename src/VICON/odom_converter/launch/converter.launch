@@ -1,0 +1,16 @@
+<launch>
+    <arg name="capture_num_"   value="1"/>
+
+    <node pkg="odom_converter" type="odom_converter" name="odom_converter" output="screen">
+        <arg name="capture_num"   value="$(arg capture_num_)"/>
+        <param name="cap_num" value="$(arg capture_num_)"     type="int" />
+        <remap from="~/pose0" to="/vrpn_client_node/hiarm0/pose"/>
+        <remap from="~/twist0" to="/vrpn_client_node/hiarm0/twist"/>
+        <!-- you can add like -->
+        <!-- <remap from="~/pose1" to="/vrpn_client_node/hiarm1/pose"/>
+        <remap from="~/twist1" to="/vrpn_client_node/hiarm1/twist"/> -->
+        
+    </node>
+
+</launch>
+

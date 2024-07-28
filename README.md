@@ -24,7 +24,7 @@ More details are in the Section **Init module**.
 
 
 
-**Step 3: **Send the trigger to take off.
+**Step 3:** Send the trigger to take off.
 
 ```sh
 #!/bin/bash
@@ -49,7 +49,7 @@ rostopic pub -1  /px4ctrl/takeoff_land quadrotor_msgs/TakeoffLand "takeoff_land_
 
 
 
-**Step5: ** Start the planner:
+**Step5:** Start the planner:
 
 ```sh
 ./shfiles/ego.sh
@@ -59,7 +59,7 @@ More details are in the Section **Ego module**.
 
 
 
-**Step 6: ** Land and Finish:
+**Step 6:** Land and Finish:
 
 Firstly, send the trigger to land:
 
